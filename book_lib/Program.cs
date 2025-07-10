@@ -47,7 +47,7 @@ namespace book_lib
 
                         Book newBook = new Book(name, author, isbn, year, stock);
                         bookService.AddBook(newBook);
-                        Console.WriteLine("✅ Book added successfully.\n");
+                        Console.WriteLine(" Book added successfully.\n");
                         break;
 
                     case "2":
@@ -65,7 +65,7 @@ namespace book_lib
                         long deleteIsbn = Convert.ToInt64(Console.ReadLine());
 
                         bool deleted = bookService.RemoveBook(deleteIsbn);
-                        Console.WriteLine(deleted ? "✅ Book deleted.\n" : "❌ Book not found.\n");
+                        Console.WriteLine(deleted ? " Book deleted.\n" : " Book not found.\n");
                         break;
 
                     case "4":
@@ -76,7 +76,7 @@ namespace book_lib
                         int newStock = Convert.ToInt32(Console.ReadLine());
 
                         bool updated = bookService.UpdateBookStock(updateIsbn, newStock);
-                        Console.WriteLine(updated ? "✅ Stock updated.\n" : "❌ Book not found.\n");
+                        Console.WriteLine(updated ? " Stock updated.\n" : " Book not found.\n");
                         break;
 
                     case "5":
@@ -84,7 +84,7 @@ namespace book_lib
                         return;
 
                     default:
-                        Console.WriteLine("❌ Invalid choice.\n");
+                        Console.WriteLine(" Invalid choice.\n");
                         break;
                 }
             }
