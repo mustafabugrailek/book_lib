@@ -2,7 +2,19 @@
 #  Library Management System
 
 A simple console-based Library Management System built with C# using a layered architecture (Entities, Services, and Presentation).
+ # Project Structure
 
+LibraryManagementSystem/
+├── Entities/
+│ ├── Book.cs
+│ ├── Loan.cs
+│ └── Member.cs
+├── Service/
+│ ├── BookService.cs
+│ ├── MemberService.cs
+│ └── LoanService.cs
+└── Presentation/
+└── Program.cs
 
 ## Technologies Used
 
